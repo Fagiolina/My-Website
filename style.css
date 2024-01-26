@@ -12,10 +12,7 @@ body {
     padding: 20px;
 }
 
-.top-line {
-    display: flex;
-    flex-direction: row;
-}
+
 
 .first-block { 
 display: flex;
@@ -104,6 +101,14 @@ flex-direction: column;
     .blocks {
         margin-top: 0; 
     }   
+    .logo {
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 20px;
+    }
 }
 .design-img { 
     display: flex;
