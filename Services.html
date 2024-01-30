@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Services</title>
+ 
+</head>
+<body>
+    <div class="background">
+    
+        <div class="top-line">
+            
+            <div class="logo"> <img src="./images/Ben Church.jpg" alt="logo" height="200px" width="200px"> </div>
+            
+            <div class="dropdown">
+                <button class="dropbtn">☰</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="Services.html">Services</a>
+                    <a href="Contact.html">Contact</a>  
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+
+<div class="s-middle">
+    <h1 class="s-title"> Services</h1> 
+  
+</div>
+
+<div class="website-design">Website-design</div>   
+<div class="w-middle">
+ 
+    <div class="slider-container">
+        <div class="slides">
+            <div class="slide"><img src="./images/website.jpg" alt="Image 1"></div>
+            <div class="slide"><img src="./images/website2.jpg" alt="Image 2"></div>
+            <div class="slide"><img src="./images/website3.jpg" alt="Image 3"></div>
+           
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <div class="website-desc">Experience website design at its finest with our service. We specialize in creating visually appealing and highly functional websites that cater to your unique needs. Our streamlined approach ensures a perfect blend of creativity and practicality, resulting in an online presence that captivates your audience. Choose our professional website design service for a polished and effective digital representation of your brand. </div>
+</div>
+</div>
+
+
+<div class="website-design">Logo Design</div>   
+
+
+<div class="s-second">
+ 
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+     
+          <img src="./images/Logo1.jpg" style=width:100%>
+          
+        </div>
+        
+        <div class="mySlides fade">
+          
+          <img src="./images/Logo2.jpg" style="width:100%">
+   
+        </div>
+        
+        <div class="mySlides fade">
+         
+          <img src="./images/Logo3.jpg" style="width:100%">
+        
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 3000); // Change image every 2 seconds
+        }
+        </script> 
+<p class = logo-design>Discover our tailored logo design services for website development. We blend creativity and technical proficiency to craft logos that uniquely represent your brand. From concept to execution, I collaborate closely with you to ensure each design aligns seamlessly with your brand identity. Elevate your website's visual appeal with a custom logo that captures the essence of your business and leaves a lasting impression in the digital landscape.</p>
+</div>
+
+</body>
+</html>
