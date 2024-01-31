@@ -159,7 +159,7 @@ body {
     }
     .dropdown {
         order: 1;
-        margin-left: -200px;
+        margin-left: -180px;
     }
     .slider-container {
         width: 500px;
@@ -179,6 +179,7 @@ body {
         margin-top: 80px;
         background-color: #c0d5d9cd;
     }
+    
 }
 
 /* Design Section */
@@ -335,6 +336,8 @@ body {
     margin-top: 120px;
     line-height: 40px;
     padding: 50px;
+    background-color: #dddddd44;
+    margin: 80px;
 }
 
 .slider-container {
@@ -393,10 +396,16 @@ body {
         margin-top: 0px;
         line-height: 30px;
         font-family: "Open Sans", sans-serif;
+        width: 300px;
+        
     }
 }
 
 @media only screen and (max-width: 800px) {
+    .first-title,
+    .second-title {
+        text-align: center;
+    }
     .w-middle {
         display: flex;
         flex-direction: column;
@@ -472,9 +481,11 @@ body {
 }
 
 .logo-design {
-    padding: 100px;
+    padding: 80px;
     line-height: 40px;
     font-family: "Open Sans", sans-serif;
+    background-color: #dddddd44;
+    margin: 30px;
 }
 
 /* On smaller screens, decrease text size */
@@ -499,6 +510,7 @@ body {
         font-size: 15px;
         font-weight: 500;
         text-align: center;
+   
     }
 
     .s-second {
@@ -506,9 +518,72 @@ body {
         flex-direction: column;
         justify-content: center;
     }
+    .s-third {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+ 
 }
 
 .s-second {
     display: flex;
     align-items: center;
 }
+
+.brochure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    margin-top: 50px;
+    padding: 20px;
+    margin-left: 100px;
+}
+.s-third {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+.brochure-design {
+    padding: 80px;
+    line-height: 40px;
+    font-family: "Open Sans", sans-serif;
+    background-color: #dddddd44;
+    margin: 50px;
+}
+
+@media only screen and (max-width: 800px) {
+    .s-third {
+        display: flex;
+        flex-direction: column;
+    }
+    .brochure {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        margin-top: 50px;
+        padding: 20px;
+        margin: auto;
+
+}
+.brochure-design {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    line-height: 40px;
+    font-family: "Open Sans", sans-serif;
+    background-color: #dddddd44;
+    margin: 30px;
+
+    
+}
+
+}
+
