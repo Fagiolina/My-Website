@@ -3,85 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="background">
+<section class="header">
+<nav>
+<a href="index.html"><img src="./images/Logo.jpg" alt="Logo"></a>
+<div class="nav-links" id="navLinks">
+    <i class="fa fa-times" onclick="hideMenu()"></i>
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="Services.html">SERVIZI</a></li>
+        <li><a href="Contact.html">CONTATTA</a></li>
+    </ul>
+</div>
+<i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+
+<div class="text-box">
+<h1> Web Design e Sviluppo Front-End</h1>
+<p>Potenziare la presenza aziendale: creare successo digitale attraverso siti Web unici e coinvolgenti. </p>
+<a href="" class="hero-btn"> Scopri i nostri servizi </a>
+</div>
+
+</section>
+<!----Servizi----->
+<section class="servizi">
+<h1> Servizi che offriamo</h1>
+<p>Ci impegniamo a dare alla tua azienda una potente identità online. Le nostre soluzioni su misura si concentrano sull'elevazione della presenza del tuo marchio nel mondo digitale. Progettiamo la storia di successo della tua attività.</p>
+
+<div class="row">
+    <div class="course-col">
+        <img class="img" src="./images/pen.jpg" width="80px">
+        <h3>Web Design</h3>
+        <p> Il nostro web design unisce creatività, funzionalità e user experience impeccabile. Ogni sito riflette l'identità aziendale e offre un'esperienza di navigazione intuitiva e coinvolgente per gli utenti, utilizzando le ultime tendenze e tecnologie.</p>
+  
+    </div>
+    <div class="course-col">
+        <img class="img" src="./images/coding.jpg" width="80px">
+        <h3> Sviluppo front end</h3>
+        <p> Il nostro sviluppo front-end si concentra sull'utilizzo delle più recenti tecnologie per creare interfacce intuitive e coinvolgenti, riflettendo l'identità aziendale e garantendo un'esperienza utente ottimale.</p>
+    </div>
+    <div class="course-col">
+        <img class="img" src="./images/handshake.jpg" width="80px">
+        <h3>Consultazione</h3>
+        <p> Offriamo consulenza alle aziende per il web design, garantendo soluzioni personalizzate che rispecchiano la loro identità di marca e assicurano un'esperienza utente ottimale.</p>
+    </div>
+</div>
+
+</section>
+
+<!----testimonials----->
+
+<section class="testimonials">
+<h1>Recenzioni dai nostri clienti</h1>
+
+<div class="row">
+    <div class="testimonial-col">
+      <img src="./images/user1.jpg">  
+      <div>
+        <p>Soddisfatti del nostro nuovo sito web e logo. Design moderno e intuitivo, riflette perfettamente il nostro marchio. Consigliato!</p>
+        <h3>Laura</h3>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-o"></i>
+      </div>
+    </div>
+
+    <div class="testimonial-col">
+        <img src="./images/user2.jpg">  
+        <div>
+          <p>Entusiasti del nostro nuovo sito web! Team professionale, design fresco e funzionale. Consigliamo vivamente!</p>
+          <h3>Matteo</h3>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+        </div>
+      </div>
     
-    <div class="top-line">
-        
-        <div class="logo"> <img src="./images/Ben Church.jpg" alt="logo" height="200px" width="200px"> </div>
-        
-        <div class="dropdown">
-            <button class="dropbtn">☰</button>
-            <div class="dropdown-content">
-                <a href="index.html">Home</a>
-                <a href="Services.html">Services</a>
-                <a href="Contact.html">Contact</a>  
-            </div>
-        </div>
-
-    </div>
-    
-    <div class="first-block">
-        <h1 class="first-title">Designer, Frontend Developer & Consultant</h1>
-        <h2 class="second-title">Empowering Your Business Presence: Crafting Digital Success Through Unique and Engaging Websites.</h2>
-        </div>
-    </div>
-
-    <div class="middle">
-        <h3 class="Hi">Go online with us</h3>
-        <p class="paragraph">We strive to give your business a powerful online identity. Our tailored solutions focus on elevating your brand presence in the digital world. Let us design the success story of your business.</p>
-    </div>
+</div>
 
 
-    <div class="blocks">
-        <div class="block">
-            <h1 class="design-img"> <img src="./images/pen.jpg" alt="pen" width="100px"> </h1>
-            <h2 class="design">Design</h2>
-            <h2 class="value">We value simple content structure, clean design patterns, and thoughtful interactions.</h2>
-            <ul class="f-list">
-                <li> Website design</li>
-                <li> Logo design</li>
-                <li>Brochure design</li>
-            </ul>
-        </div>
-        <div class="block">
-            <h1 class="code-img"> <img src="./images/coding.jpg" alt="code" width="100px"> </h1>
-            <h2 class="design"> Frontend development
-            </h2>
-            <h2 class="value"> We code things from scratch, and enjoy bringing ideas to life in the browser.</h2>
-            <ul class="f-list">
-                <li> HTML</li>
-                <li> CSS</li>
-                <li>JavaScript</li>
-            </ul>
-        </div>
-        <div class="block">
-            <h1 class="handshake"> <img src="./images/handshake.jpg" alt="handshake" width="100px"> </h1>
-            <h2 class="design"> Consultation </h2>
-            <h2 class="value"> We bring your ideas to life
-            </h2>
-            <ul class="f-list">
-                <li>Expertise</li>
-                <li>Guidance</li>
-                <li>Collaboration</li>
-        </div>
+</section>
 
-    </div>
+<!--------Contattaci------->
 
-    <div class="mail-gif"><img src="./images/email.gif" alt="mail" width="300px"><img></div>
-        <div class="contact-block">
-        <div class="contact"> <h1>Contact</h1></div>
-        <div class="email-tel">
-            <div class="email"> Email: benchurchdesign@gmail.com </div>
-            <div class="tel"> Tel. +39 3335956480</div>  
-        </div>
-        </div>
- 
+<section class="cta">
+<h1> Contattaci per avere <br> piu informazioni</h1>
+<a href="" class="hero-btn">CONTATTACI</a>
+
+</section>
+
+
+<!--------JS for Toggle Menu------->
+<script>
+   
+   var navLinks = document.getElementById("navLinks")
+
+   function showMenu(){
+    navLinks.style.right= "0";
+   }
+   function hideMenu(){
+    navLinks.style.right= "-200px";
+   }
+   
+</script>
+
+
+
 </body>
 </html>
